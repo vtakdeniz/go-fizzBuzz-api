@@ -24,7 +24,7 @@ func fizzBuzz(ctx *fiber.Ctx) error {
 
 	var response response
 
-	for i := 1; i < num; i++ {
+	for i := 1; i <= num; i++ {
 		if i%15 == 0 {
 			response.Arr = append(response.Arr, "fizz buzz")
 		} else if i%5 == 0 {
